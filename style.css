@@ -45,13 +45,17 @@
 
   --clr-blue: hsla(228, 100%, 66%, 1);
   --clr-desat-blue: hsla(228, 100%, 75%, 1);
+  --clr-ocean-blue: hsla(227, 100%, 95%, 1);
+  --clr-hover-accent: hsla(227, 100%, 88%, 1);
+
   --clr-very-dark-blue: hsla(227, 22%, 26%, 1);
   --clr-blackish: hsla(228, 22%, 19%, 1);
   --clr-grey: hsla(227, 14%, 52%, 1);
+  --clr-very-soft-grey: hsla(0, 0%, 100%, 1);
   --clr-soft-red: hsla(0, 83%, 65%, 1);
 
-  --clr-greyish-bg: hsla(0, 0%, 95%, 1);
-  --clr-white-bg: hsl(0, 0%, 100%);
+  --clr-greyish-bg: hsl(0, 0%, 98%);
+  --clr-white: hsl(0, 0%, 100%);
 }
 
 body {
@@ -64,11 +68,105 @@ body {
   text-align: center;
 }
 
-img {
+img,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* ================== */
 /* Typography */
+/* ================== */
+.title {
+  font-size: var(--fs-40);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+}
+
+.copy-text,
+.feature-copy {
+  color: var(--clr-grey);
+}
+
+.plan-name {
+  font-size: var(--fs-20);
+  font-weight: var(--fw-bold);
+}
+
+.plan-price {
+  font-size: var(--fs-56);
+  font-weight: var(--fw-bold);
+}
+
+.countdown-text {
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--clr-white);
+}
+
+.accent {
+  color: var(--clr-blue);
+}
+
+.cd-card__number {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-32);
+  color: var(--clr-white);
+}
+
+.cd-card__unit {
+  font-size: var(--fs-12);
+  color: var(--clr-very-soft-grey);
+}
+
+/* ===================== */
+/* Buttons, inputs */
+/* ===================== */
+
+.btn {
+  display: inline-block;
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+  padding: 0.875em 2.5em;
+  background: var(--clr-blue);
+  border-radius: 2em;
+  text-decoration: none;
+  box-shadow: 0px 4px 5px 1px hsla(229, 35%, 47%, 0.25);
+}
+.btn:hover,
+.btn:focus {
+  background: var(--clr-desat-blue);
+  box-shadow: 0px 4px 10px 4px hsla(229, 35%, 47%, 0.25);
+}
+
+.btn--accent-1 {
+  color: var(--clr-blue);
+  background: var(--clr-ocean-blue);
+  box-shadow: unset;
+}
+.btn--accent-1:hover,
+.btn--accent-1:focus {
+  background: var(--clr-hover-accent);
+  box-shadow: unset;
+}
+
+.btn--accent-2 {
+  color: var(--clr-blue);
+  background: var(--clr-white);
+  box-shadow: unset;
+}
+.btn--accent-2:hover,
+.btn--accent-2:focus {
+  color: var(--clr-desat-blue);
+  background: var(--clr-white);
+  box-shadow: unset;
+}
+
+/* ================== */
+/* Utility styles */
+/* ================== */
+
+/* ================== */
+/* SECTIONS */
 /* ================== */
