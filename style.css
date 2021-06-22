@@ -167,6 +167,155 @@ svg {
 /* Utility styles */
 /* ================== */
 
+.wrapper {
+  background: url('./assets/home/bg-pattern-header.svg');
+  background-position: 0% -7%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 0 1.5em;
+}
+
 /* ================== */
 /* SECTIONS */
 /* ================== */
+
+/* Header */
+.header {
+  margin-top: 2.875em;
+}
+
+.logo .logo-img {
+  margin: 0 auto;
+}
+
+/* Section A */
+.section-a {
+  margin-top: 5em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-area {
+  order: -1;
+}
+
+.image-area svg {
+}
+
+.copy-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+/* Section B */
+.section-b {
+  margin-top: 6em;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+
+  margin-bottom: -49em;
+}
+
+.card {
+  background: var(--clr-white);
+  width: 100%;
+  border-radius: 1em;
+  padding: 2.5em 0;
+}
+
+.card--accent {
+  background: var(--clr-blue);
+  background-image: url('./assets/home/bg-pattern-pricing.svg');
+  background-position: 50% 102%;
+
+  background-size: 250%;
+  background-repeat: no-repeat;
+  color: var(--clr-white);
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-price {
+  margin-top: 0.75em;
+  line-height: 1;
+}
+
+.plan-subtitle {
+  margin-top: 1em;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  margin-top: 3.5em;
+}
+
+.card--accent .feature-copy {
+  color: var(--clr-white);
+  opacity: 0.75;
+}
+
+.card .btn {
+  margin-top: 2em;
+}
+
+/* Footer */
+.footer {
+  background: var(--clr-blackish);
+  background-image: url('./assets/home/bg-pattern-footer.svg');
+  background-position: 50% 250%;
+
+  background-size: 310%;
+  background-repeat: no-repeat;
+
+  padding-top: 50em;
+  padding-bottom: 6.25em;
+}
+
+.footer__content {
+  margin-top: 6.25em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+}
+
+.countdown-cards {
+  margin-top: 1.2em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.cd-card {
+  background: var(--clr-very-dark-blue);
+  padding: 0.8em 1.1em;
+}
