@@ -358,6 +358,8 @@ svg {
     padding: 0 2.4375em;
   }
 
+  /* SECTIONS */
+
   /* Header */
   .header {
     margin-top: 4.5em;
@@ -484,5 +486,70 @@ svg {
 
   .cd-card__unit {
     margin-top: 0.25em;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1060px) {
+  /* Typography */
+  .title {
+    font-size: var(--fs-56);
+  }
+  .copy-text {
+    font-size: var(--fs-18);
+  }
+
+  /* SECTIONS */
+
+  .section-b {
+    margin-top: 12em;
+  }
+
+  .cards {
+    flex-direction: row;
+
+    margin-bottom: -10em;
+  }
+
+  .card {
+    max-width: unset;
+    padding: 2.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card--accent {
+    background-position: -320px -450px;
+
+    background-size: 300%;
+  }
+
+  .plan-name,
+  .plan-price,
+  .feature-copy {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding-top: 10.5em;
+
+    background-position: 120% 40%;
+
+    background-size: 160%;
+  }
+
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: unset;
+  }
+  .countdown-text {
+    width: 100%;
   }
 }
