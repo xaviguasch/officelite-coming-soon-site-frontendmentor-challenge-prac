@@ -499,6 +499,10 @@ svg {
     font-size: var(--fs-18);
   }
 
+  .container {
+    padding: 0;
+  }
+
   /* SECTIONS */
   .header,
   .section-a,
