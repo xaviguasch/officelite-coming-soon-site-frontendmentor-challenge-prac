@@ -500,6 +500,14 @@ svg {
   }
 
   /* SECTIONS */
+  .header,
+  .section-a,
+  .section-b,
+  .footer__content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1110px;
+  }
 
   .section-b {
     margin-top: 12em;
