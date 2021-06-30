@@ -51,6 +51,7 @@
   --clr-very-dark-blue: hsla(227, 22%, 26%, 1);
   --clr-blackish: hsla(228, 22%, 19%, 1);
   --clr-grey: hsla(227, 14%, 52%, 1);
+  --clr-grey-diluted: hsla(227, 14%, 52%, 0.25);
   --clr-very-soft-grey: hsla(0, 0%, 100%, 1);
   --clr-soft-red: hsla(0, 83%, 65%, 1);
 
@@ -117,7 +118,8 @@ svg {
 
 .cd-card__unit {
   font-size: var(--fs-12);
-  color: var(--clr-very-soft-grey);
+  color: var(--clr-grey);
+  font-weight: var(--fw-bold);
 }
 
 /* ===================== */
@@ -322,6 +324,58 @@ svg {
 .cd-card {
   background: var(--clr-very-dark-blue);
   padding: 0.8em 1.1em;
+  border-radius: 0.5em;
+}
+
+/* ================== */
+/* SIGN-UP PAGE */
+/* ================== */
+
+.wrapper--sign-up {
+  background-position: 45% -14em;
+  background-size: 130%;
+}
+
+.wrapper--sign-up .countdown-cards {
+  margin-top: 0;
+}
+
+.wrapper--sign-up .countdown-text {
+  margin-top: 4em;
+  color: var(--clr-very-dark-blue);
+}
+
+.wrapper--sign-up .cd-card {
+  background: var(--clr-ocean-blue);
+}
+
+.wrapper--sign-up .cd-card__number {
+  color: var(--clr-blue);
+}
+
+/* Form area */
+.form-area {
+  padding-top: 4em;
+}
+
+.form-container {
+  background: var(--clr-white);
+  border-radius: 0.5em;
+
+  padding: 1.5em;
+}
+
+.form-sign-up input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--clr-grey-diluted);
+  margin-bottom: 1.5em;
+}
+
+.background {
+  margin-top: -4em;
+  height: 20em;
+  background-color: var(--clr-blackish);
 }
 
 /* ================== */
@@ -560,6 +614,8 @@ svg {
     justify-content: space-between;
     align-items: center;
     gap: unset;
+
+    padding-bottom: 5.625em;
   }
   .countdown-text {
     width: 100%;
