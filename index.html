@@ -342,24 +342,31 @@
           <div class="countdown-area">
             <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
 
-            <p class="countdown-text">Coming <span class="accent">4 Nov 2020</span></p>
+            <p class="countdown-text">
+              Coming
+              <span class="accent">
+                <span id="launch-date__day"></span>
+                <span id="launch-date__month"></span>
+                <span id="launch-date__year"></span>
+              </span>
+            </p>
             <div class="countdown-cards">
               <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
 
               <div class="cd-card">
-                <h2 class="cd-card__number">47</h2>
+                <h2 id="countdown__days" class="cd-card__number">47</h2>
                 <p class="cd-card__unit">days</p>
               </div>
               <div class="cd-card">
-                <h2 class="cd-card__number">07</h2>
+                <h2 id="countdown__hours" class="cd-card__number">07</h2>
                 <p class="cd-card__unit">hours</p>
               </div>
               <div class="cd-card">
-                <h2 class="cd-card__number">56</h2>
+                <h2 id="countdown__minutes" class="cd-card__number">56</h2>
                 <p class="cd-card__unit">min</p>
               </div>
               <div class="cd-card">
-                <h2 class="cd-card__number">14</h2>
+                <h2 id="countdown__seconds" class="cd-card__number">14</h2>
                 <p class="cd-card__unit">sec</p>
               </div>
             </div>

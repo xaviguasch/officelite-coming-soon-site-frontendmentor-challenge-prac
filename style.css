@@ -51,7 +51,7 @@
   --clr-very-dark-blue: hsla(227, 22%, 26%, 1);
   --clr-blackish: hsla(228, 22%, 19%, 1);
   --clr-grey: hsla(227, 14%, 52%, 1);
-  --clr-grey-diluted: hsla(227, 14%, 52%, 0.25);
+  --clr-grey-diluted: hsla(227, 14%, 52%, 0.4);
   --clr-very-soft-grey: hsla(0, 0%, 100%, 1);
   --clr-soft-red: hsla(0, 83%, 65%, 1);
 
@@ -365,11 +365,43 @@ svg {
   padding: 1.5em;
 }
 
-.form-sign-up input {
+.form-sign-up input,
+.form__select {
   width: 100%;
   border: none;
   border-bottom: 1px solid var(--clr-grey-diluted);
   margin-bottom: 1.5em;
+  padding-bottom: 1em;
+}
+
+.form-sign-up input::-webkit-input-placeholder {
+  font-family: var(--ff-main);
+  color: var(--clr-grey-diluted);
+  font-size: var(--fs-16);
+  padding-left: 1em;
+}
+
+.form__select {
+  font-family: var(--ff-main);
+  color: var(--clr-very-dark-blue);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-bold);
+  padding-left: 0.5em;
+}
+
+.option-cat {
+  color: var(--clr-grey-diluted);
+}
+
+.form-area .btn {
+  border: none;
+  padding: 1em 0;
+  width: 100%;
+
+  font-size: var(--fs-16);
+  font-family: inherit;
+  font-weight: var(--fw-regular);
+  margin-top: 1.5em;
 }
 
 .background {
