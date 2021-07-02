@@ -205,9 +205,10 @@ svg {
 
 .image-area {
   order: -1;
+  padding: 0 4.25em;
 }
 
-.image-area svg {
+.svg-charts {
 }
 
 .copy-area {
@@ -218,6 +219,7 @@ svg {
   gap: 1.5em;
 
   max-width: 440px;
+  margin-top: 4em;
 }
 
 /* Section B */
@@ -336,6 +338,10 @@ svg {
   background-size: 130%;
 }
 
+.wrapper--sign-up .copy-area {
+  margin-top: 0;
+}
+
 .wrapper--sign-up .countdown-cards {
   margin-top: 0;
 }
@@ -405,9 +411,15 @@ svg {
 }
 
 .background {
-  margin-top: -4em;
-  height: 20em;
-  background-color: var(--clr-blackish);
+  margin-top: -12em;
+  height: 280px;
+  background: var(--clr-blackish);
+  background-image: url('./assets/sign-up/bg-pattern-side.svg');
+
+  background-position: -280px -300px;
+
+  background-size: 250%;
+  background-repeat: no-repeat;
 }
 
 /* ================== */
