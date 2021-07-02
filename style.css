@@ -426,6 +426,7 @@ svg {
 /* Tablet */
 @media (min-width: 720px) {
   /* Typography */
+
   .cd-card__number {
     font-size: var(--fs-56);
     line-height: 1;
@@ -444,6 +445,7 @@ svg {
     background-size: contain;
     background-repeat: no-repeat;
   }
+
   /* Utility Styles */
   .wrapper {
     background: none;
@@ -486,6 +488,7 @@ svg {
     width: 45%;
 
     padding: 0;
+    padding-top: 2em;
   }
 
   /* Section B */
@@ -584,6 +587,52 @@ svg {
 
   .cd-card__unit {
     margin-top: 0.25em;
+  }
+
+  /* SIGN-UP PAGE */
+
+  .section-a--sign-up {
+    flex-direction: column;
+  }
+
+  .section-a--sign-up .copy-area {
+    width: 80%;
+    gap: unset;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-a--sign-up .title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .section-a--sign-up .copy-text {
+    margin-top: 1.5em;
+  }
+  .section-a--sign-up .countdown-text {
+    margin-top: 2.5em;
+  }
+  .section-a--sign-up .countdown-cards {
+    margin-top: 1em;
+  }
+
+  .section-a--sign-up .form-area {
+    padding-top: 6.5em;
+  }
+  .section-a--sign-up .form-container {
+    max-width: 445px;
+    padding: 2.5em 2.5em 3.25em;
+  }
+
+  .background {
+    margin-top: -15em;
+    height: 380px;
+
+    background-position: -280px -460px;
+
+    background-size: 175%;
   }
 }
 
