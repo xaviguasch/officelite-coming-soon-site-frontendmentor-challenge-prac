@@ -208,9 +208,6 @@ svg {
   padding: 0 4.25em;
 }
 
-.svg-charts {
-}
-
 .copy-area {
   display: flex;
   flex-direction: column;
@@ -477,7 +474,8 @@ svg {
   }
 
   .copy-area {
-    width: 53.5%;
+    margin-top: 0;
+    width: 50%;
     align-items: flex-start;
 
     max-width: unset;
@@ -485,7 +483,9 @@ svg {
 
   .image-area {
     order: unset;
-    width: 40%;
+    width: 45%;
+
+    padding: 0;
   }
 
   /* Section B */
