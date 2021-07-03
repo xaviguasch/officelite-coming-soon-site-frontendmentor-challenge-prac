@@ -713,4 +713,36 @@ svg {
   .countdown-text {
     width: 100%;
   }
+
+  /* SIGN-UP PAGE */
+
+  .section-a--sign-up {
+    margin-top: 7em;
+    flex-direction: row;
+  }
+
+  .section-a--sign-up .copy-area {
+    width: 48%;
+    align-items: flex-start;
+  }
+  .section-a--sign-up .copy-area .title {
+    text-align: left;
+  }
+
+  .section-a--sign-up .form-area {
+    padding-top: 0;
+    width: 40%;
+  }
+
+  .background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100vw;
+
+    background-position: -350px -200px;
+    background-size: 300%;
+  }
 }
